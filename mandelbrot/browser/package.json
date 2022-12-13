@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@wasmer/wasi": "^1.2.0"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "buffer": "^6.0.2",
+    "vite": "^3.2.4"
+  }
+}

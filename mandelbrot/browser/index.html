@@ -1,0 +1,65 @@
+<html>
+<head>
+  <script src="./index.js" type="module"></script>
+  <style>
+    #container {
+      text-align: center;
+      width: 100%;
+    }
+    #wrapper {
+      margin: 0 auto;
+      padding: 12px 0;
+      max-width: 1000px;
+      background: rgba(141, 141, 141, 0.75);
+    }
+    #canvas_wrapper {
+      margin-bottom: 32px;
+    }
+    #pbm_view {
+      width: 500px;
+      height: 500px;
+      image-rendering: pixelated;
+      background: #fff;
+    }
+    #buttons {
+      height: 100px;
+      background: #eee;
+      margin: 0 12px;
+    }
+    #buttons__submit {
+      margin-top: 12px;
+    }
+    #buttons__submit button {
+      font-size: 1.5em;
+      padding: 0.5em;
+    }
+  </style>
+  <title>Wasmer on Browser</title>
+</head>
+<body>
+<h2>Wasmer on Browser</h3>
+<h3 id="elapsed_time">Elapsed time :</h5>
+
+<div id="container">
+  <div id="wrapper">
+    <div id="canvas_wrapper">
+      <canvas width="500" height="500" id="pbm_view" />
+    </div>
+    <div id="buttons">
+      <div id="buttons__N">
+        <label for="buttons__N--select">N :</label>
+        <select id="buttons__N--select">
+          <option value="120">120</option>
+          <option value="1000">1000</option>
+          <option value="4000">4000</option>
+        </select>
+      </div>
+      <div id="buttons__submit">
+        <button type="button" id="buttons__submit--button">Generate!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
